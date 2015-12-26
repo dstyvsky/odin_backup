@@ -1,0 +1,15 @@
+MergeSort  (A[1..n]) {
+	
+	if n > 1
+
+		copy A[1..n/2] into B[1..n/2]
+
+		copy A[n/2..n] into C[1..n/2]
+
+		MergeSort(B[1..n/2])
+
+		MergeSort(C[1..n/2])
+
+		Merge(B,C,A)
+
+}
